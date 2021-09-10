@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+}
+body{
+    background: linear-gradient(rgb(250, 203, 203), white);
+    color: black;
+    font-family: 'Iceberg', cursive;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.container{
+    z-index: 999;
+    min-height: 100vh;
+}
+
+.head{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.head1{
+    background: linear-gradient(violet, indigo, blue, green, yellow, orange, red);
+    border-radius: 10px;
+    text-shadow: 0px 0px 10px black;
+    opacity: 0.8;
+    font-family: 'Monoton', cursive;
+}
+.head1a{
+    color: violet;
+}
+.head1b{
+    color: indigo;
+}
+.head1c{
+    color: blue;
+}
+.head1d{
+    color: green;
+}
+.head1e{
+    color: yellow;
+}
+.head1f{
+    color: orange;
+}
+.head1g{
+    color: red;
+}
+.head2{
+    color: brown;
+    font-weight: bold;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.input{
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.fa-microphone{
+    position: relative;
+    right: 3rem;
+    bottom: .25rem;
+    font-size: 1.3rem;
+}
+
+.fa-microphone:hover{
+    cursor: pointer;
+}
+
+.inputVal{
+    height: 70px;
+    width: 500px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: none;
+    border: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button{
+    width: 130px;
+    height: 40px;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    border: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.display{
+    padding: 20px;
+    text-align: center;
+    height: 330px;
+    bottom: 0;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.CityName{
+    font-size: 50px;
+    height: 40px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: row;
+}
+.detail div{
+    margin: 20px;
+    height: 250px;
+    width: 28%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7);
+}
+.tempdiv{
+    border-color: red;
+}
+.tempdiv img{
+    height: 50px;
+}
+.descdiv img{
+    height: 50px;
+}
+.speeddiv img{
+    height: 50px;
+}
+
+.detail p{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.foot{
+    position: fixed;
+    bottom: 0px;
+    left: 39vw;
+    text-align: center;
+}
+
+@media only screen and (max-width: 450px){
+    .head{
+        font-size: 30px;
+    }
+    .display{
+        width: 89%;
+        margin: 0px;
+        height: auto;
+    }
+    .inputVal{
+        font-size: 20px;
+        height: 50px;
+        width: 80%;
+        margin-left: 1.8rem;
+    }
+    .button{
+        font-size: 15px;
+    }
+
+    .input p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .fa-microphone{
+        font-size: 1rem;
+        right: 2.3rem;
+        top: .1rem;
+    }
+    .CityName{
+        height: 70px;
+    }
+    .detail{
+        flex-wrap: wrap;
+    }
+    .detail div{
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+    .foot{
+        position: relative;
+        left: 0px;
+    }
+}

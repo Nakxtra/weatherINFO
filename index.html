@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherINFO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo"></video>
+    <div class="container">
+        <div class="head">
+            <span class="head1"><span class="head1a">w</span><span class="head1b">e</span><span class="head1c">a</span><span class="head1d">t</span><span class="head1e">h</span><span class="head1f">e</span><span class="head1g">r</span></span><span class="head2">INFO</span>
+        </div>
+        <div class="mic"> </div>
+        <div class="input">
+            <div class="get">
+                <input spellcheck="false" type="text" class="inputVal" placeholder="Enter your city">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <p class="note">*Please refresh the page before every input to feel the weather with background.</p>
+            <input type="submit" value="Get Update" class="button">
+        </div>
+        <div class="display">
+            <h1 class="CityName"></h1>
+            <div class="detail">
+                <div class="tempdiv">
+                    <img src="https://icon-library.com/images/temperature-icon-png/temperature-icon-png-17.jpg">
+                    <p class="temp">Temp.</p>
+                </div>
+                <div class="descdiv">
+                    <img src="https://image.flaticon.com/icons/png/512/3026/3026446.png">
+                    <p class="desc">Weather</p>
+                </div>
+                <div class="speeddiv">
+                    <img src="https://image.flaticon.com/icons/png/128/615/615579.png">
+                    <p class="speed">Speed</p>
+                </div>
+            </div>
+        </div>
+        <div class="foot"> © Copyright | NAKSHATRA | IIIT BHOPAL</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
